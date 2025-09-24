@@ -1,0 +1,77 @@
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.statistics-section {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 810px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 700px;
+}
+
+.stats-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.stats-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.stats-label {
+  font-size: 1.125rem;
+  color: #6b7280;
+}
+
+.stat-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.pie-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+.pie-wrapper canvas {
+  width: 250px !important;
+  height: 250px !important;
+}
+
+.pie-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pie-block .stats-value {
+  font-size: 2.25rem;
+  margin-top: 0.5rem;
+}

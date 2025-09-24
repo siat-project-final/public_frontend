@@ -1,0 +1,1248 @@
+:root {
+  --dark-bg: #1e1e1e;
+  --dark-card: #2b2b2b;
+  --dark-text: #e5e5e5;
+  --dark-subtext: #c7c7c7;
+  --dark-today: #333333;
+}
+
+.dark-mode {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+/* FullCalendar 스타일 */
+.dark-mode .fc {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+.dark-mode .fc .fc-toolbar-title,
+.dark-mode .fc .fc-daygrid-day-number {
+  color: var(--dark-text);
+}
+.dark-mode .fc .fc-daygrid-day.fc-day-today {
+  background: var(--dark-today);
+}
+.dark-mode .fc-event {
+  background: #4a90e2;
+  border: none;
+  color: #ffffff;
+}
+
+/* 모달도 확인 */
+.dark-mode .calendar-modal {
+  background: var(--dark-card);
+  color: var(--dark-text);
+}
+.dark-mode .menu-button {
+  background: #34495e;
+  color: #ecf0f1;
+}
+.dark-mode .menu-button:hover {
+  background: #3d566e;
+}
+
+/* === Header 최상단 영역 === */
+.dark-mode #header {
+  background: linear-gradient(to right, #1f1f1f, #2a2a2a);
+  color: #e0e0e0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #444;
+}
+
+/* === 내비게이션 메뉴 항목 === */
+.dark-mode .navmenu ul li > a {
+  color: #cfcfcf;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.dark-mode .navmenu ul li > a:hover,
+.dark-mode .navmenu ul li > a.active {
+  color: #84cc16; /* lime green 강조색 */
+}
+
+/* === 드롭다운 메뉴 === */
+.dark-mode .navmenu .dropdown-menu {
+  background: #262626;
+  border: 1px solid #444;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  border-radius: 8px;
+}
+
+.dark-mode .navmenu .dropdown-item {
+  color: #ddd;
+  font-size: 13px;
+  padding: 10px 14px;
+}
+
+.dark-mode .navmenu .dropdown-item:hover {
+  background: #333;
+  color: #84cc16;
+}
+
+/* === 알림 아이콘 === */
+.dark-mode .alarm-item img {
+  filter: brightness(0.8) saturate(1.2);
+  transition: filter 0.2s;
+}
+
+.dark-mode .alarm-item img:hover {
+  filter: brightness(1.2);
+}
+
+/* === Logout 버튼 === */
+.dark-mode .btn-getstarted {
+  background: transparent;
+  color: #e0e0e0;
+  border: 1px solid #666;
+  backdrop-filter: blur(4px);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.dark-mode .btn-getstarted:hover {
+  background: #3a3a3a;
+  color: #84cc16;
+  border-color: #84cc16;
+}
+/* ===== Sidebar 전체 ===== */
+.dark-mode .sidebar {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-right: 1px solid #444;
+}
+
+/* ===== Sidebar 제목 ===== */
+.dark-mode .sidebar-title {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 1rem;
+    color: #84cc16;
+    border-bottom: 1px solid #333;
+}
+
+/* ===== Sidebar 링크 ===== */
+.dark-mode .sidebar-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #ccc;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.dark-mode .sidebar-link:hover {
+    background-color: #333;
+    color: #84cc16;
+}
+
+.dark-mode .sidebar-link.active {
+    background-color: #2d2d2d;
+    color: #84cc16;
+    font-weight: 600;
+}
+
+/* ===== 멘토링 ===== */
+
+/* ===== 다크모드 카드 전체 ===== */
+.dark-mode .card {
+  background-color: #2c2c2e;
+  border: 1px solid #3c3c3e;
+  color: #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+/* ===== 카드 내부 input, textarea ===== */
+.dark-mode .card input.form-control,
+.dark-mode .card textarea.form-control {
+  background-color: #3a3a3c;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+.dark-mode .card input.form-control:focus,
+.dark-mode .card textarea.form-control:focus {
+  border-color: #84cc16;
+  box-shadow: 0 0 0 0.2rem rgba(132,204,22,0.25);
+  background-color: #444;
+  outline: none;
+}
+
+.dark-mode .badge.bg-primary {
+  background-color: #4f46e5;
+}
+
+.dark-mode .badge.bg-success {
+  background-color: #16a34a;
+}
+
+.dark-mode .badge.bg-secondary {
+  background-color: #6c757d;
+}
+
+/* ===== 상세보기 버튼 ===== */
+.dark-mode .card .btn.text-white {
+  background-color: #84cc16;
+  color: #1e1e1e;
+}
+
+.dark-mode .card .btn.text-white:hover {
+  background-color: #a3e635;
+}
+
+/* ===== 삭제 버튼 ===== */
+.dark-mode .card button.btn {
+  background-color: #ffffff;
+  color: #fff;
+}
+
+.dark-mode .card button.btn:hover {
+  background-color: #9ca3af;
+}
+
+/* ===== StudyLogPage ===== */
+.dark-mode .main {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+/* ===== 상단 타이틀 "MY STUDY LOG" ===== */
+.dark-mode h1.h3 {
+  color: #a3e635;
+}
+
+/* ===== 필터 select box ===== */
+.dark-mode .form-select {
+  background-color: #2d2d2d;
+  color: #f1f1f1;
+  border: 1px solid #555;
+}
+.dark-mode .form-select:focus {
+  border-color: #84cc16;
+  box-shadow: 0 0 0 0.2rem rgba(132,204,22,0.25);
+}
+
+/* ===== 작성 버튼 ===== */
+.dark-mode .btn.text-white {
+  background-color: #84cc16;
+  color: #1e1e1e;
+}
+.dark-mode .btn.text-white:hover {
+  background-color: #a3e635;
+}
+
+/* ===== 우측 Todo 패널 ===== */
+.dark-mode .todo-sidebar {
+  background-color: #2a2a2a;
+  border-left: 1px solid #444;
+  color: #f1f1f1;
+}
+
+/* ===== 다크모드: 좋아요 버튼 (기본 검정 배경) ===== */
+.dark-mode .btn.btn-outline-success {
+  background-color: #000;
+  color: #84cc16;
+  border-color: #84cc16;
+}
+
+.dark-mode .btn.btn-outline-success:hover {
+  background-color: #1a1a1a;
+  color: #a3e635;
+  border-color: #a3e635;
+}
+
+.dark-mode .btn.btn-success {
+  background-color: #84cc16;
+  color: #1e1e1e;
+  border-color: #84cc16;
+}
+
+.dark-mode .btn.btn-success:hover {
+  background-color: #a3e635;
+  color: #1e1e1e;
+}
+.dark-mode .btn.btn-outline-success:focus {
+  box-shadow: 0 0 0 0.2rem rgba(132,204,22,0.25);
+}
+/* ===== 다크모드: Todo 컴포넌트 기본 글자색 ===== */
+.dark-mode .todo-sidebar,
+.dark-mode .todo-sidebar * {
+  color: #f1f1f1;
+}
+
+
+/* ===== 다크모드: 제목에 흰색 텍스트 적용 (fw-bold 전용) ===== */
+.dark-mode h3.fw-bold,
+.dark-mode h4.fw-bold,
+.dark-mode h5.fw-bold,
+.dark-mode h6.fw-bold {
+  color: #ffffff;
+}
+/* ===== 좋아요 버튼: 다크모드에서 흰 텍스트 강제 적용 ===== */
+.dark-mode .btn.btn-success {
+  background-color: #84cc16 !important;
+  color: #000000 !important;
+  border: none;
+}
+
+.dark-mode .btn.btn-success:hover {
+  background-color: #a3e635 !important;
+  color: #000000 !important;
+}
+
+/* ===== 아웃라인 버튼 (좋아요 안누른 상태일 때) ===== */
+.dark-mode .btn.btn-outline-success {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border: 1px solid #84cc16 !important;
+}
+
+.dark-mode .btn.btn-outline-success:hover {
+  background-color: #84cc16 !important;
+  color: #000000 !important;
+}
+
+/* Hover 시 색 좀 더 밝게 */
+.dark-mode .btn.btn-success:hover {
+  background-color: #a3e635;
+  color: #000000;
+}
+
+/* ===== 다크모드: AI 요약 실행 버튼 (btn-secondary) ===== */
+.dark-mode .btn.btn-secondary {
+  background-color: #4b5563 !important; /* 회색 배경 */
+  color: #ffffff !important;           /* 흰색 글씨 */
+  border: none !important;
+}
+
+.dark-mode .btn.btn-secondary:hover {
+  background-color: #6b7280 !important; /* 조금 밝은 회색 */
+  color: #ffffff !important;
+}
+
+/* ===== 다크모드: h3 제목 흰색 ===== */
+.dark-mode h3 {
+  color: #ffffff;
+}
+
+/* ===== 다크모드: 읽기 전용 input, textarea ===== */
+.dark-mode input.form-control[readonly],
+.dark-mode textarea.form-control[readonly] {
+  background-color: #2d2d2d !important; /* 진한 회색 */
+  color: #e0e0e0 !important;            /* 텍스트 흰색 */
+  border: 1px solid #555 !important;
+}
+
+.dark-mode .text-muted {
+  color: #e0e0e0 !important;  /* 밝은 회색 또는 흰색 계열 */
+}
+
+.dark-mode .form-label {
+  color: #ffffff;
+}
+
+.dark-mode .custom-card {
+  background-color: #2b2b2b; /* 다크 카드 배경 */
+  border: 1px solid #444;    /* 어두운 테두리 */
+  color: #f1f1f1;            /* 텍스트 흰색 */
+}
+.dark-mode .custom-card:hover {
+  background-color: #333333; /* 살짝 더 밝은 회색으로 반응 */
+}
+
+.dark-mode .main > div > div {
+  background-color: #2b2b2b;      /* 카드 영역 배경 */
+  border: 1px solid #444;         /* 테두리 어둡게 */
+  color: #f1f1f1;                 /* 텍스트 흰색 */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); /* 기존보다 진하게 */
+}
+
+/*  다크모드: MentoringApply 페이지 대응 */
+
+/* 제목 및 라벨 텍스트 색상 */
+.dark-mode .prewrite-main h1,
+.dark-mode .field-label {
+  color: #ffffff;
+}
+
+/* 필수 텍스트 빨간색 유지 */
+.dark-mode .required {
+  color: #ff7070;
+}
+
+/* 텍스트에어리어 & 기타 입력란 배경/글자색 조정 */
+.dark-mode textarea.mentoring-textarea,
+.dark-mode input.mentoring-other-input {
+  background-color: #3a3a3c;
+  color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+/* 체크박스 색상 조정 */
+.dark-mode input[type='checkbox'] {
+  accent-color: #c4dd47;
+}
+
+/* 에러 메시지 유지 */
+.dark-mode .error-msg {
+  color: #ff6b6b;
+}
+
+/* 버튼들: 취소(회색), 제출(연두) */
+.dark-mode .btn-cancel {
+  background-color: #6c757d;
+  color: #ffffff;
+}
+
+.dark-mode .btn-submit {
+  background-color: #a3e635;
+  color: #000000;
+}
+
+/* 모달 내부 span 텍스트 */
+.dark-mode .small-msg {
+  color: #cccccc;
+}
+
+/* 카드/왼쪽 패널 등 회색톤 통일 */
+.dark-mode .todo-sidebar-wrapper,
+.dark-mode .field-box,
+.dark-mode .checkbox-list {
+  background-color: #2e2e2e;
+}
+
+/* 필요 시 input 기본 값도 대응 */
+.dark-mode input[type='text'] {
+  background-color: #3a3a3c;
+  color: #f1f1f1;
+  border: 1px solid #555;
+}
+.dark-mode .aos-init.aos-animate {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .section {
+  background-color: #1e1e1e;
+}
+
+/* 다크모드: h4 텍스트 흰색 */
+.dark-mode h4 {
+  color: #ffffff;
+}
+
+
+.dark-mode h5 {
+  color: #ffffff;
+}
+
+.dark-mode .challenge-card {
+  background-color: #2c2c2e;
+  color: #f1f1f1;
+  border: 1px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+.dark-mode .current-month,
+.dark-mode .challenge-date,
+.dark-mode .info-label,
+.dark-mode .info-value {
+  color: #ffffff;
+}
+
+.dark-mode .mentoring-box {
+  background-color: #2e2e2e; /* 진한 회색 배경 */
+  color: #ffffff; /* 글씨 흰색 */
+  border: 1px solid #444; /* 경계선이 필요할 경우 */
+}
+
+.dark-mode .mentoring-form-group label {
+  color: #ffffff; /* 라벨 텍스트 흰색 */
+}
+
+.dark-mode .mentoring-form-group input[readonly] {
+  background-color: #2e2e2e; /* 진한 회색 배경 */
+  color: #ffffff; /* 텍스트 흰색 */
+  border: 1px solid #555; /* 필요 시 테두리 */
+}
+
+.dark-mode .profile-section,
+.dark-mode .profile-content,
+.dark-mode .profile-left,
+.dark-mode .profile-form {
+    background-color: #1e1e1e; /* 어두운 배경 */
+    color: #ffffff; /* 텍스트 흰색 */
+}
+
+.dark-mode .profile-form input,
+.dark-mode .profile-form textarea,
+.dark-mode .profile-form select {
+    background-color: #2e2e2e; /* 더 진한 회색 */
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+.dark-mode .form-group label {
+    color: #ffffff; /* 라벨 흰색 */
+}
+
+.dark-mode .form-group input[type="text"] {
+    background-color: #2e2e2e; /* 진한 회색 배경 */
+    color: #ffffff; /* 텍스트 흰색 */
+    border: 1px solid #555; /* 테두리 색 조정 */
+}
+/* 다크모드에서 FullCalendar 요일 셀 텍스트 배경만 회색으로 */
+.dark-mode .fc .fc-col-header-cell-cushion {
+    background-color: #3a3a3a !important;  /* 배경색만 변경 */
+    color: #ffffff !important;             /* 글자 흰색 */
+    display: inline-block;                 /* 배경 적용을 위해 block 처리 */
+    width: 100%;
+    height: 100%;                          /* 기존 세로 높이 유지 */
+    text-align: center;
+    border-radius: 4px;
+}
+
+.dark-mode .inner-card {
+    background-color: #2e2e2e; /* 밝은 회색 느낌의 다크모드 배경 */
+    border: 1px solid #444;   /* 테두리도 어둡게 */
+    color: #ffffff;           /* 텍스트 흰색 */
+}
+.dark-mode div,
+.dark-mode span {
+    color: #ffffff; /* 흰색 텍스트 */
+}
+.dark-mode div[style*="border: 1px solid rgb(226, 232, 240)"] {
+    background-color: #3a3a3a !important; /* 더 밝은 회색 배경 */
+    border-color: #4a4a4a !important;     /* 테두리도 조정 */
+    color: #ffffff !important;            /* 안에 들어갈 텍스트 대비 위해 */
+}
+
+.dark-mode div[style*="height: 1px"][style*="background-color: rgb(226, 232, 240)"] {
+    background-color: #000000 !important;
+}
+
+.dark-mode .fc .fc-col-header-cell-cushion {
+  background-color: #444444 !important; /* 회색 */
+  color: #ffffff !important;
+}
+.dark-mode .main {
+  background-color: var(--dark-bg) !important; /* 혹은 원하는 색으로 지정 */
+}
+
+
+.dark-mode .react-calendar {
+  background-color: var(--dark-card);
+  color: var(--dark-text);
+  border: 1px solid var(--dark-border);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.dark-mode .react-calendar__navigation button {
+  background-color: transparent;
+  color: var(--dark-text);
+}
+
+.dark-mode .react-calendar__navigation button:hover {
+  background-color: var(--dark-hover);
+}
+
+/* 요일 헤더 */
+.dark-mode .react-calendar__month-view__weekdays {
+  background-color: var(--dark-inner-card);
+}
+
+.dark-mode .react-calendar__month-view__weekdays abbr {
+  color: var(--dark-text);
+}
+
+/* 날짜 셀 */
+.dark-mode .react-calendar__tile {
+  background: transparent;
+  color: var(--dark-text);
+}
+
+.dark-mode .react-calendar__tile:enabled:hover {
+  background-color: var(--dark-hover);
+}
+
+/* 오늘 날짜 */
+.dark-mode .react-calendar__tile--now {
+  background: var(--dark-today);
+  color: var(--dark-highlight);
+  font-weight: bold;
+}
+
+/* 선택된 날짜 */
+.dark-mode .react-calendar__tile--active {
+  background-color: var(--dark-highlight);
+  color: black;
+}
+.dark-mode div[style*="background: rgb(255, 255, 255)"] {
+  background-color: var(--dark-card) !important;
+  color: var(--dark-text) !important;
+  border: 1px solid var(--dark-border) !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) !important;
+}
+.dark-mode div[style*="background: rgb(255, 255, 255)"],
+.dark-mode div[style*="background: rgb(243, 231, 225)"] {
+  background-color: var(--dark-card) !important;
+  color: var(--dark-text) !important;
+  border: 1px solid var(--dark-border) !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark-mode div[style*="color: rgb(0, 0, 0)"],
+.dark-mode div[style*="color: rgb(55, 65, 81)"] {
+  color: var(--dark-text) !important;
+}
+.dark-mode li {
+  color: var(--dark-text) !important;
+}
+.dark-mode .prewrite-main {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.dark-mode .field-box {
+  background-color: var(--dark-card);
+  color: var(--dark-text);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.dark-mode .field-label {
+  color: var(--dark-subtext);
+}
+
+.dark-mode .mentoring-textarea {
+  background-color: var(--dark-inner-card);
+  color: var(--dark-text);
+  border: 1px solid var(--dark-outline);
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+.dark-mode .title-center {
+  color: var(--dark-text);
+}
+.dark-mode .fc-button-primary {
+  background-color: var(--dark-inner-card);
+  color: var(--dark-text);
+  border: 1px solid var(--dark-border);
+  box-shadow: none;
+}
+
+.dark-mode .fc-button-primary {
+  background-color: #ffffff !important; /* 흰 배경 */
+  color: #1e1e1e !important;            /* 어두운 글자 */
+  border: 1px solid #cccccc !important;
+  box-shadow: none !important;
+}
+
+.dark-mode .fc-button-primary:hover {
+  background-color: #f0f0f0 !important; /* hover 시 밝은 회색 */
+  color: #1e1e1e !important;
+  border-color: #bbbbbb !important;
+}
+
+.dark-mode .fc-button-primary:disabled {
+  background-color: #eeeeee !important;
+  color: #999999 !important;
+  opacity: 0.5 !important;
+  cursor: not-allowed;
+}
+.dark-mode h4 {
+  color: #ffffff !important;
+}
+.dark-mode label {
+  color: #ffffff !important;
+}
+.dark-mode .mb-4 {
+  background-color: #1e1e1e !important;
+  border: 1px solid #1e1e1e !important;
+  color: #ffffff !important;
+}
+
+.dark-mode pre {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 15px;
+  white-space: pre-wrap;
+  font-family: inherit;
+  border: 1px solid #222;
+}
+
+
+.dark-mode pre {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 15px;
+  white-space: pre-wrap;
+  font-family: inherit;
+  border: 1px solid #222;
+}
+
+.dark-mode .CircularProgressbar-text {
+  fill: #ffffff !important;
+}
+
+
+
+.dark-mode .form-check-input[type="radio"]:checked {
+  background-color: #84cc16;
+  border-color: #84cc16;
+  box-shadow: 0 0 0 2px rgba(132, 204, 22, 0.4);
+}
+
+.dark-mode .list-group-item {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border-color: #444;
+}
+
+
+.dark-mode .list-group-item-success {
+  background-color: #14532d !important;
+  color: #a3e635 !important;
+  border-color: #166534 !important;
+}
+
+.dark-mode .list-group-item-danger {
+  background-color: #7f1d1d !important;
+  color: #f87171 !important;
+  border-color: #991b1b !important;
+}
+
+.dark-mode .card {
+  background-color: #2b2b2b !important;
+  color: #ffffff !important;
+  border: 1px solid #444;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+.dark-mode .card.text-center {
+  background-color: #2b2b2b !important;
+}
+
+.dark-mode .bg-white {
+  background-color: #2b2b2b !important;
+  color: #ffffff !important;
+}
+
+.dark-mode .stat-card {
+  background-color: #2b2b2b; 
+  border: 1px solid #444; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); 
+}
+
+.dark-mode .stats-value {
+  color: #ffffff; 
+}
+
+.dark-mode .stats-label {
+  color: #cfcfcf; 
+}
+
+.dark-mode .login-container {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+
+
+.dark-mode .login-title {
+    color: var(--dark-text);
+}
+.dark-mode .form-group label {
+    color: var(--dark-text);
+}
+
+.dark-mode input[type="password"] {
+    background-color: #3a3a3c;
+    color: var(--dark-text);
+    border: 1px solid var(--dark-outline);
+}
+
+.dark-mode input[type="password"]::placeholder {
+    color: var(--dark-subtext);
+}
+.dark-mode .login-button.primary {
+    background-color: #d9f99d; /* 더 밝은 연두색 */
+    color: #000000;
+    border: none;
+}
+.dark-mode .login-button.primary:hover {
+    background-color: #bef264; /* hover 시에도 밝게 유지 */
+}
+
+/* 회원가입 버튼 (secondary) */
+.dark-mode .login-button.secondary {
+    background-color: #4b5563; /* 어두운 회색 */
+    color: #ffffff;
+    border: none;
+}
+.dark-mode .login-button.secondary:hover {
+    background-color: #6b7280;
+}
+/* === 비활성화된 textarea (disabled)도 다크모드로 === */
+.dark-mode textarea.form-control[disabled],
+.dark-mode textarea[disabled] {
+    background-color: #2e2e2e !important;
+    color: var(--dark-subtext) !important;
+    border: 1px solid rgba(241, 237, 237, 0.568) !important; /* 흰색 테두리로 수정 */
+    opacity: 1 !important; /* 흐려지는 효과 제거 */
+    cursor: not-allowed;
+}
+
+/* === 비활성화된 input 요소도 다크모드로 === */
+.dark-mode input.form-control[disabled],
+.dark-mode input[disabled] {
+    background-color: #2e2e2e !important;
+    color: var(--dark-subtext) !important;
+    border: 1px solid rgba(241, 237, 237, 0.699) !important;  /* 흰색 테두리로 수정 */
+    opacity: 1 !important;  /* 흐려짐 방지 */
+    cursor: not-allowed;
+}
+
+.dark-mode .card {
+    background-color: #706c6c;
+    border: 1px solid rgba(241, 237, 237, 0.329);  /* 살짝 흰색 테두리 */
+}
+
+/* 회원가입 */
+
+:root {
+    --dark-bg: #1e1e1e;
+    --dark-box-bg: #2e2e2e;
+    --dark-border: rgb(241, 237, 237);
+    --dark-subtext: #ccc;
+}
+
+/* === 다크모드 입력 요소 통일 적용 === */
+.dark-mode input[type="text"],
+.dark-mode input[type="email"],
+.dark-mode input[type="tel"],
+.dark-mode input[type="password"],
+.dark-mode input[type="number"],
+.dark-mode textarea,
+.dark-mode .form-input,
+.dark-mode .form-control {
+    background-color: var(--dark-box-bg);
+    color: var(--dark-subtext);
+    border: 1px solid var(--dark-border);
+    padding: 10px 14px;
+    border-radius: 8px;
+    transition: border 0.2s ease;
+}
+
+/* === 포커스 시 강조 (선택) === */
+.dark-mode input:focus,
+.dark-mode textarea:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+/* === 라벨 === */
+.dark-mode label,
+.dark-mode .form-label {
+    color: var(--dark-subtext);
+    font-weight: 500;
+}
+/* === 다크모드: 제목 === */
+.dark-mode .signup-title {
+    color: var(--dark-subtext);
+    font-weight: 600;
+}
+.dark-mode .signup-box {
+    background-color: var(--dark-box-bg);        /* 짙은 회색 배경 */
+    color: var(--dark-subtext);                  /* 텍스트 색상 */
+    border: 1px solid var(--dark-border);        /* 연한 흰색 테두리 */
+    padding: 24px;                                /* 여백 */
+    border-radius: 8px;                           /* 둥근 테두리 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);     /* 약한 그림자 (선택사항) */
+}
+
+.dark-mode .signup-container {
+    background-color: var(--dark-bg);             /* 가장 바깥 배경 */
+    color: var(--dark-subtext);                   /* 기본 텍스트 색상 */
+    border: 1px solid var(--dark-border);         /* 옅은 테두리 */
+    padding: 32px;                                 /* 전체 여백 */
+    border-radius: 12px;                           /* 더 넓은 곡률 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);    /* 깊이감 (선택) */
+}
+.dark-mode .form-input {
+    background-color: var(--dark-box-bg) !important;
+    color: var(--dark-subtext) !important;
+    border: 1px solid var(--dark-border) !important;
+    padding: 10px 14px !important;
+    border-radius: 8px !important;
+}/* FullCalendar 셀 다크모드 스타일 */
+.dark-mode .fc-daygrid-day {
+    background-color: #1e1e1e;
+    border: 1px solid var(--dark-outline);
+    color: var(--dark-subtext);
+}
+
+/* 선택된 날짜 셀 강조 (예: selected-cell) */
+.dark-mode .fc-daygrid-day.selected-cell {
+    background-color: #333333;
+    border: 1px solid #999;
+}
+
+/* 셀 상단 (날짜 숫자 위치) */
+.dark-mode .fc-daygrid-day-top {
+    color: var(--dark-subtext);
+}
+
+/* 셀 안 프레임 */
+.dark-mode .fc-daygrid-day-frame {
+    background-color: transparent;
+}
+
+/* 캘린더 헤더 요일 배경 */
+.dark-mode .fc-col-header-cell {
+    background-color: #2c2c2c;
+    color: var(--dark-subtext);
+    border: 1px solid var(--dark-outline);
+}
+
+/* 캘린더 전체 그리드 */
+.dark-mode .fc-scrollgrid {
+    border-color: var(--dark-outline);
+}
+
+/* 캘린더 셀 hover 효과 */
+.dark-mode .fc-daygrid-day:hover {
+    background-color: #2a2a2a;
+}
+/* 다크모드: 모달 오버레이 (배경 흐림 효과) */
+.dark-mode .modal-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* 기존보다 더 어둡게 */
+}
+
+/* 다크모드: 모달 콘텐츠 내부 */
+.dark-mode .modal-content {
+    background-color: #2e2e2e;
+    color: var(--dark-subtext); /* 전역 변수로 설정했을 경우 */
+    border: 1px solid var(--dark-outline);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* 다크모드: 닫기 버튼 */
+.dark-mode .close-button {
+    background-color: transparent;
+    color: var(--dark-subtext);
+    border: 1px solid var(--dark-outline);
+}
+
+.dark-mode .close-button:hover {
+    background-color: #444;
+    color: #fff;
+}
+/* 다크모드: 일반 input (날짜 선택 등) */
+.dark-mode input[type="date"],
+.dark-mode input[type="time"] {
+    background-color: #2e2e2e;
+    color: var(--dark-subtext);
+    border: 1px solid var(--dark-outline);
+}
+
+/* 다크모드: disabled된 input (시간 등 비활성화) */
+.dark-mode input[type="date"][disabled],
+.dark-mode input[type="time"][disabled] {
+    background-color: #2e2e2e;
+    color: var(--dark-subtext);
+    border: 1px solid var(--dark-outline);
+    opacity: 1; /* 흐려지는 효과 제거 */
+    cursor: not-allowed;
+}
+.dark-mode .fc-daygrid-day-frame {
+    background-color: #2e2e2e !important; /* 어두운 배경 */
+    color: #e0e0e0 !important;            /* 밝은 텍스트 */
+    border: 1px solid #444 !important;   /* 셀 테두리 */
+}
+.dark-mode .your-popup-class {
+    background-color: #2e2e2e !important;
+    border: 1px solid #666 !important;
+}
+.dark-mode [style*="position: absolute"][style*="grid-template-columns"] {
+    background-color: #2e2e2e !important;
+    border-color: #666 !important;
+}
+.popup-grid {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 6px;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(5, 24px);
+    gap: 8px;
+    z-index: 999;
+}
+
+
+.dark-mode main.content {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+
+.dark-mode .sidebar {
+    background-color: #2c2c2c;
+    border-right: 1px solid #444;
+}
+
+.dark-mode .header {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #444;
+    color: #fff;
+}
+
+
+.dark-mode .container {
+    background-color: transparent; /* 또는 필요에 따라 #2a2a2a */
+    color: #f0f0f0;
+}
+/* bg-light → 어두운 회색 톤으로 */
+.dark-mode .bg-light {
+    background-color: #2e2e2e !important;
+}
+
+
+.dark-mode .border {
+    border: 1px solid #aaa !important;
+}
+
+/* text-success → 기본 초록 유지하거나 더 밝게 조정하고 싶다면 아래 추가 */
+.dark-mode .text-success {
+    color: #58d68d !important;  /* 예: 밝은 연두빛 초록 */
+}
+/* === 다크모드: 뱃지 카드 전체 스타일 === */
+.dark-mode .badge-card {
+    background-color: #2b2b2b;  /* 기본 어두운 배경 */
+    border: 1px solid #444;
+    color: #f0f0f0;
+}
+
+/* === 달성된 뱃지 카드 === */
+.dark-mode .badge-card.achieved {
+    background-color: #3d3d3d;  /* 좀 더 강조된 어두운 배경 */
+    border: 1px solid #58d68d;  /* 초록 테두리 등 강조 */
+}
+
+/* === 잠긴 뱃지 카드 === */
+.dark-mode .badge-card.locked {
+    background-color: #1f1f1f;  /* 더 어두운 배경 */
+    border: 1px dashed #888;
+    color: #888;
+    opacity: 0.6;  /* 살짝 비활성 느낌 */
+}
+
+
+.dark-mode a.fc-event[style*="rgb(241, 148, 138)"] {
+    background-color: #5e3d36 !important;   /* 어두운 브라운/살구 대체 */
+    border-color: #5e3d36 !important;
+}
+
+.dark-mode a.fc-event[style*="rgb(241, 148, 138)"] .fc-event-main {
+    color: #ffffff !important; /* 흰색 글자 */
+}
+.dark-mode a.fc-event[style*="rgb(249, 231, 159)"] {
+    background-color: #5a5a2e !important;
+    border-color: #5a5a2e !important;
+}
+
+.dark-mode a.fc-event[style*="rgb(249, 231, 159)"] .fc-event-main {
+    color: #ffffff !important;
+}
+.dark-mode a.fc-event[style*="rgb(215, 219, 221)"] {
+    background-color: #44484a !important;
+    border-color: #44484a !important;
+}
+
+.dark-mode a.fc-event[style*="rgb(215, 219, 221)"] .fc-event-main {
+    color: #ffffff !important;
+}
+.dark-mode a.fc-event[style*="rgb(241, 196, 15)"] {
+    background-color: #5a4a1a !important;
+    border-color: #5a4a1a !important;
+}
+
+.dark-mode a.fc-event[style*="rgb(241, 196, 15)"] .fc-event-main {
+    color: #ffffff !important;
+}
+.dark-mode a.fc-event[style*="rgb(133, 193, 233)"] {
+    background-color: #24495c !important;
+    border-color: #24495c !important;
+}
+
+.dark-mode a.fc-event[style*="rgb(133, 193, 233)"] .fc-event-main {
+    color: #ffffff !important;
+}
+.dark-mode a.fc-event[style*="rgb(245, 176, 65)"] {
+    background-color: #5b3d1f !important;
+    border-color: #5b3d1f !important;
+}
+
+.dark-mode a.fc-event[style*="rgb(245, 176, 65)"] .fc-event-main {
+    color: #ffffff !important;
+}
+.dark-mode .color-swatch[style*="rgb(203, 166, 255)"] {
+    background-color: #4e3b61 !important;
+}
+
+.dark-mode .color-swatch[style*="rgb(243, 199, 243)"] {
+    background-color: #5b3c5b !important;
+}
+
+/* === 다크모드에서 form 스타일 강제 덮기 === */
+.dark-mode form {
+    background-color: #2e2e2e !important;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 6px !important;
+    color: var(--dark-subtext) !important;
+    border-radius: 4% !important;
+    padding: 30px !important;
+}
+/* === 다크모드 input 테두리 흰색 처리 === */
+.dark-mode input[type="text"],
+.dark-mode input[type="email"],
+.dark-mode input[type="password"],
+.dark-mode input[type="number"],
+.dark-mode input {
+    background-color: #2e2e2e !important;
+    color: var(--dark-subtext) !important;
+    border: 1px solid white !important;
+    border-radius: 8px;
+    padding: 10px 14px;
+}
+
+
+.dark-mode a.fc-event[style*="rgb(186, 255, 201)"] {
+  background-color: #2d6b5f !important; /* 어두운 민트 */
+  border-color: #2d6b5f !important;
+}
+
+.dark-mode a.fc-event[style*="rgb(186, 255, 201)"] .fc-event-main {
+  color: white !important;
+}
+
+.dark-mode a.fc-event[style*="rgb(247, 220, 111)"] {
+  background-color: #776f2d !important; /* 어두운 노랑/카키 */
+  border-color: #776f2d !important;
+}
+
+.dark-mode a.fc-event[style*="rgb(247, 220, 111)"] .fc-event-main {
+  color: white !important;
+}
+
+.dark-mode .detail-content {
+  background-color: transparent;         
+  color: var(--dark-subtext, #e0e0e0);    
+  border-radius: 6px;
+  padding: 4px 6px;
+}
+/* === 다크모드: 통계 값 스타일 === */
+.dark-mode .stats-value {
+    color: #f0f0f0;  /* 밝은 텍스트 */
+    background-color: transparent;  /* 배경 유지 또는 필요시 조정 */
+}
+/* === 다크모드: 통계 카드 === */
+.dark-mode .stat-card {
+    background-color: #2e2e2e;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+    color: #f0f0f0;
+}
+
+/* === 다크모드: 통계 값 텍스트 === */
+.dark-mode .stat-card .stats-value {
+    color: #ffffff;
+}
+
+/* === 다크모드: canvas 주변 조정 필요시 (배경 투명하게 유지됨) === */
+.dark-mode canvas {
+    background-color: transparent; /* 필요 시 rgba(255,255,255,0.05) 등으로 변경 */
+}
+/* === 다크모드 전역 강제 적용 === */
+.dark-mode {
+    background-color: #1e1e1e !important;
+    color: #f0f0f0 !important;
+}
+
+.dark-mode * {
+    background-color: transparent !important;
+    color: #f0f0f0 !important;
+    border-color: #444 !important;
+}
+
+/* === 특정 카드 스타일 === */
+.dark-mode .card,
+.dark-mode .stat-card,
+.dark-mode .badge-card,
+.dark-mode .fc-daygrid-day-frame,
+.dark-mode .modal-content,
+.dark-mode .form-control[disabled],
+.dark-mode input[disabled],
+.dark-mode textarea[disabled],
+.dark-mode .login-box,
+.dark-mode .sidebar,
+.dark-mode .content {
+    background-color: #2e2e2e !important;
+    color: #f0f0f0 !important;
+    border: 1px solid #555 !important;
+}
+
+/* === 버튼 스타일 강제 지정 === */
+.dark-mode button,
+.dark-mode .btn,
+.dark-mode .login-button {
+    background-color: #444 !important;
+    color: #fff !important;
+    border: 1px solid #666 !important;
+}
+
+.dark-mode .login-button.primary {
+    background-color: #5a5a5a !important;
+}
+
+.dark-mode .login-button.secondary {
+    background-color: #3c3c3c !important;
+}
+
+/* === FullCalendar day cell 스타일 === */
+.dark-mode .fc-daygrid-day-frame {
+    background-color: #2a2a2a !important;
+    border: 1px solid #444 !important;
+}
+
+/* === 테이블 짝수줄 회색 줄무늬 === */
+.dark-mode tr:nth-child(even) {
+    background-color: #2a2a2a !important;
+}
+.dark-mode tr:nth-child(odd) {
+    background-color: #1e1e1e !important;
+}
+
+/* === 배지 카드 === */
+.dark-mode .badge-card.achieved {
+    background-color: #3a3a3a !important;
+}
+.dark-mode .badge-card.locked {
+    background-color: #1e1e1e !important;
+    opacity: 0.6 !important;
+}

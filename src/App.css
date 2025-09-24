@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 캘린더 */
+.react-calendar {
+  background: #ffffff;
+  border-radius: 12px;
+  border: none;
+  font-family: 'Noto Sans KR', sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.react-calendar__tile {
+  padding: 12px 0;
+  font-size: 14px;
+  color: #334155;
+}
+
+.react-calendar__tile--active {
+  background: #5fcf80;
+  color: white;
+  border-radius: 50%;
+}
+
+.react-calendar__tile--now {
+  background: #fef9c3;
+  border-radius: 50%;
+}
+
+.react-calendar__navigation button {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+/* 요일 텍스트 왼쪽 정렬 */
+/* .fc .fc-col-header-cell-cushion {
+  display: block;
+  text-align: left;
+  padding-left: 6px;
+} */
+
+.fc-header-toolbar {
+  margin-top: 15px; /* 원하는 만큼 조절 */
+}
+
+.fc-button-myPrev,
+.fc-button-myNext {
+  background: none;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+.fc-myPrev-button,
+.fc-myNext-button {
+  background: none;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+/* calendar 일정 추가/수정/삭제 */
+.fc-event {
+  display: block !important;
+  border-radius: 6px !important;
+  padding: 2px 4px !important;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.fc-daygrid-event-dot {
+  display: none !important; /* ● 제거 */
+}
+
+th.ranking-header {
+  background-color: #84cc16 !important;
+  color: white !important;
+  font-weight: bold;
+}
